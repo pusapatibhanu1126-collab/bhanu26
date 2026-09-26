@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Krishna | B.Sc AI Portfolio</title>
+<style>
+  :root { --bg:#070A12; --card:#111628; --text:#eef2ff; --muted:#8a91b4; --accent:#5ee9ff; --accent2:#7c6cf6; }
+  *{margin:0;padding:0;box-sizing:border-box;font-family:Inter,system-ui,sans-serif}
+  body{background:var(--bg);color:var(--text);line-height:1.6}
+  nav{display:flex;justify-content:space-between;padding:20px 6%;position:sticky;top:0;background:rgba(7,10,18,0.85);backdrop-filter:blur(12px);z-index:10;border-bottom:1px solid #1a213d}
+  nav a{color:var(--muted);text-decoration:none;margin-left:18px} nav a:hover{color:var(--text)}
+  .hero{padding:90px 6% 40px;max-width:1100px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
+  .hero h1{font-size:clamp(32px,5.5vw,62px);line-height:1;letter-spacing:-2px}
+  .hero h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  .hero p{color:var(--muted);margin:18px 0 26px;font-size:17px}
+  .pill{display:inline-block;background:#111a33;border:1px solid #1e2a5a;color:var(--accent);padding:6px 14px;border-radius:100px;font-size:13px;margin-bottom:16px}
+  .btn{display:inline-block;background:var(--text);color:var(--bg);padding:12px 22px;border-radius:100px;text-decoration:none;font-weight:700}
+  .btn.outline{background:transparent;border:1px solid #2a3567;color:var(--text);margin-left:10px}
+  section{padding:50px 6%;max-width:1100px}
+  h2{font-size:26px;margin-bottom:24px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px}
+  .card{background:var(--card);border:1px solid #1c264e;border-radius:18px;padding:22px;transition:.2s}
+  .card:hover{border-color:var(--accent);transform:translateY(-3px)}
+  .card p{color:var(--muted);font-size:14px;margin:8px 0}
+  .tag{background:#1a244f;border-radius:100px;padding:4px 10px;font-size:11px;margin:5px 5px 0 0;display:inline-block;color:#aab3d6}
+  .info-box{background:linear-gradient(180deg,#111628,#0e142b);border:1px solid #1e2a5a;border-radius:18px;padding:24px}
+  .info-box div{margin:8px 0;color:var(--muted)} .info-box b{color:var(--text)}
+  .skills{display:flex;flex-wrap:wrap;gap:10px}
+  .skills span{background:var(--card);border:1px solid #1c264e;padding:10px 16px;border-radius:100px;font-size:14px}
+  input,textarea{width:100%;background:var(--card);border:1px solid #1c264e;color:var(--text);padding:12px;border-radius:12px;margin-top:12px}
+  footer{padding:30px 6%;color:var(--muted);border-top:1px solid #1a213d;text-align:center;font-size:14px}
+  @media(max-width:800px){.hero{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav>
+  <strong>KRISHNA.DEV</strong>
+  <div>
+    <a href="#work">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div>
+    <div class="pill">B.Sc Artificial Intelligence • 1st Year • 2026-2029</div>
+    <h1>Hi, I'm Krishna<br><span>AI Student & Python Developer</span></h1>
+    <p>First-year B.Sc AI student from Jaggaiahpeta, NTR Dist, AP. I build web apps with Flask & Django and I'm passionate about AI.</p>
+    <a href="#work" class="btn">See My Work</a>
+    <a href="#contact" class="btn outline">Contact Me</a>
+  </div>
+  <div class="info-box">
+    <h3 style="margin-bottom:12px">Academic Info</h3>
+    <div><b>Name:</b> Krishna</div>
+    <div><b>Course:</b> B.Sc Artificial Intelligence</div>
+    <div><b>Year:</b> 1st Year</div>
+    <div><b>Academic Year:</b> 2026 - 2029</div>
+    <div><b>Location:</b> Jaggaiahpeta, NTR Dist, AP</div>
+    <div><b>Email:</b> krishna.ai@example.com</div>
+    <div style="margin-top:14px"><b>Goal:</b> Become an AI Engineer / Full-Stack Developer</div>
+  </div>
+</div>
+
+<section id="about">
+  <h2>My Skills</h2>
+  <div class="skills">
+    <span>🐍 Python</span><span>🌐 HTML5</span><span>🎨 CSS3</span><span>Flask</span><span>Django</span><span>AI / ML Basics</span><span>Git & GitHub</span>
+  </div>
+</section>
+
+<section id="work">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>AI Chatbot with Flask</h3>
+      <p>A simple chatbot built using Python + Flask that answers B.Sc AI syllabus questions.</p>
+      <span class="tag">Python</span><span class="tag">Flask</span><span class="tag">HTML/CSS</span>
+      <br><br><a href="#" style="color:var(--accent);text-decoration:none">View on GitHub →</a>
+    </div>
+    <div class="card">
+      <h3>Student Portfolio Website</h3>
+      <p>This portfolio itself - responsive personal website for my academic profile.</p>
+      <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Django</span>
+      <br><br><a href="#" style="color:var(--accent);text-decoration:none">Live URL →</a>
+    </div>
+    <div class="card">
+      <h3>Jaggaiahpeta Info Portal</h3>
+      <p>Idea for final year - A Django web app to provide local info about Jaggaiahpeta, NTR Dist.</p>
+      <span class="tag">Django</span><span class="tag">Python</span><span class="tag">Idea</span>
+      <br><br><a href="#" style="color:var(--accent);text-decoration:none">Coming Soon →</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Let's Connect</h2>
+  <p style="color:var(--muted)">From Jaggaiahpeta to the world - open for internships, projects, and learning.</p>
+  <form onsubmit="event.preventDefault(); alert('Thanks Krishna! Connect this form to Formspree or EmailJS to get messages.');">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="4" placeholder="Message for Krishna..."></textarea>
+    <br><br><button class="btn" type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 Krishna • B.Sc AI (2026-2029) • Jaggaiahpeta, NTR Dist, AP<br>
+  Built with Python Love • Host on krishna-ai.netlify.app
+</footer>
+
+</body>
+  </html>
